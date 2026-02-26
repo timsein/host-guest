@@ -194,6 +194,20 @@
     }
   }
 
+  // --- URL Param: Pre-fill message with collection name ---
+  const collectionParam = urlParams.get('collection');
+  const messageField = document.getElementById('message');
+  const collectionNames = {
+    'table': 'The Table Collection',
+    'stationery': 'Stationery Suites',
+    'gift-boxes': 'Gift Boxes',
+    'seasonal': 'Seasonal Editions'
+  };
+  if (collectionParam && messageField && collectionNames[collectionParam]) {
+    messageField.value = "I'm interested in " + collectionNames[collectionParam] + ".";
+    messageField.dispatchEvent(new Event('input'));
+  }
+
 
   // --- Scroll Reveal ---
   const revealObserver = new IntersectionObserver((entries) => {
