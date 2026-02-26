@@ -981,7 +981,7 @@ body.menu-open {
   }
 
   .gallery-arches-track {
-    height: 280px;
+    height: 340px;
     animation-duration: 180s;
   }
 
@@ -1153,8 +1153,6 @@ body.menu-open {
   overflow: hidden;
   cursor: pointer;
   transition: flex 0.65s cubic-bezier(0.25, 0, 0.1, 1);
-  will-change: flex;
-  contain: layout style;
 }
 
 .offerings-panel.active {
@@ -1722,9 +1720,6 @@ body.menu-open {
   height: 100%;
   object-fit: cover;
   transition: transform 0.6s var(--ease);
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .product-card:hover .product-card-bg img {
@@ -1930,9 +1925,6 @@ body.menu-open {
   border: none;
   border-radius: 0;
   transition: transform 0.6s var(--ease);
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .related-card:hover .related-card-img {
@@ -2517,10 +2509,10 @@ body.menu-open {
   }
 
 
-  /* --- Gallery curves — prominent arch on mobile --- */
+  /* --- Gallery curves — subtle arch on mobile --- */
   .gallery-arches::before,
   .gallery-arches::after {
-    height: clamp(50px, 12vw, 80px);
+    height: clamp(35px, 8vw, 50px);
   }
 
 
@@ -2621,22 +2613,3 @@ body.menu-open {
 }
 
 
-/* --- Content Visibility: skip rendering offscreen sections --- */
-.philosophy,
-.offerings,
-.testimonials,
-.products-highlight,
-.statement,
-.section-cta,
-.offering-intro,
-.offering-services,
-.process,
-.featured-testimonial,
-.related-offerings,
-.values-section,
-.product-categories,
-.featured-collection,
-.connect {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 500px;
-}
