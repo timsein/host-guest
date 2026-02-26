@@ -976,8 +976,13 @@ body.menu-open {
 }
 
 @media (max-width: 768px) {
+  .gallery-arches {
+    padding: 0;
+  }
+
   .gallery-arches-track {
-    height: 300px;
+    height: 280px;
+    animation-duration: 180s;
   }
 
   .gallery-arch {
@@ -2512,10 +2517,10 @@ body.menu-open {
   }
 
 
-  /* --- Gallery curves — less aggressive on mobile --- */
+  /* --- Gallery curves — prominent arch on mobile --- */
   .gallery-arches::before,
   .gallery-arches::after {
-    height: clamp(30px, 6vw, 60px);
+    height: clamp(50px, 12vw, 80px);
   }
 
 
