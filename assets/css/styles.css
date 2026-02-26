@@ -2600,7 +2600,7 @@ body.menu-open {
 /* --- Reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   .gallery-arches-track {
-    animation-duration: 240s;
+    animation-duration: 300s;
   }
 
   [data-reveal] {
