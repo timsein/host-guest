@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablescapes — The Host &amp; The Guest</title>
+  <meta name="description" content="Curated tablescape styling that tells a story. We create extraordinary styled table experiences for dinner parties, celebrations, and events.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#1f2c1e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%231f2c1e'/></svg>">
+  <link rel="preload" as="image" type="image/webp" href="assets/images/colored/garden-table-sunset-dahlias.webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <div class="nav-left">
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <div class="nav-toggle-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+        <span class="nav-sep" aria-hidden="true"></span>
+      </div>
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-short">H&amp;G</span>
+        <span class="nav-logo-full">
+          <span class="nav-logo-top">The Host</span>
+          <span class="nav-logo-bottom">&amp; The Guest</span>
+        </span>
+      </a>
+      <div class="nav-right">
+        <button class="nav-icon" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <span class="nav-sep" aria-hidden="true"></span>
+        <a href="connect.html" class="nav-icon nav-cart" aria-label="Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="nav-cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide-out Menu -->
+  <div class="slide-menu-overlay" id="slideMenuOverlay"></div>
+  <div class="slide-menu" id="slideMenu">
+    <nav class="slide-menu-nav">
+      <a href="index.html" class="slide-menu-link slide-menu-link--faded">Home</a>
+      <a href="about.html" class="slide-menu-link slide-menu-link--faded">About</a>
+      <button class="slide-menu-link" id="servicesToggle" type="button">Services <span class="slide-menu-arrow">&rarr;</span></button>
+      <a href="products.html" class="slide-menu-link slide-menu-link--faded">Products</a>
+      <a href="connect.html" class="slide-menu-link slide-menu-link--faded">Connect</a>
+    </nav>
+  </div>
+  <div class="slide-menu-sub" id="slideMenuSub">
+    <button class="slide-menu-sub-back" id="slideMenuSubBack">&larr; Back</button>
+    <h3 class="slide-menu-sub-title">Services</h3>
+    <div class="slide-menu-sub-divider"></div>
+    <div class="slide-menu-sub-links">
+      <a href="events.html" class="slide-menu-sub-link">Events</a>
+      <a href="workshops.html" class="slide-menu-sub-link">Workshops</a>
+      <a href="tablescapes.html" class="slide-menu-sub-link">Tablescapes</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HEADER STAGE ============ -->
+    <div class="header-stage"></div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <picture><source type="image/webp" srcset="assets/images/colored/garden-table-sunset-dahlias.webp"><img src="assets/images/colored/garden-table-sunset-dahlias.jpg" alt="Garden table at sunset with dahlias" fetchpriority="high" width="1600" height="900" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span class="section-label">Tablescapes</span>
+        <h1 class="page-hero-title">Extraordinary moments <em>around the table</em></h1>
+        <p class="page-hero-subtitle">We curate experiences &ldquo;around the table&rdquo; that capture a desired feel and effect for the guests.</p>
+      </div>
+    </section>
+
+    <!-- ============ INTRODUCTION ============ -->
+    <section class="offering-intro">
+      <div class="container">
+        <div class="philosophy-layout">
+          <div class="philosophy-left" data-reveal>
+            <span class="offering-watermark" aria-hidden="true">03</span>
+            <span class="section-label">The Approach</span>
+            <h2 class="philosophy-heading">
+              The table is where <em>life happens.</em>
+            </h2>
+          </div>
+          <div class="philosophy-right" data-reveal>
+            <p>The table has always been more than a place to eat. It is where strangers become friends, where families reconnect, where deals are sealed with a handshake and a shared glass. A curated dining experience honors this ancient power &mdash; transforming a meal into a moment that lingers long after the last course is cleared.</p>
+            <p>We design experiences that go far beyond the plate. The flicker of candlelight, the weight of the linen, the first note of fragrance as you sit down, the rhythm of conversation that builds as the evening unfolds &mdash; these are the invisible threads we weave into every gathering. Atmosphere, intention, and care turn a dinner into something you carry with you.</p>
+            <p>There is a world of difference between eating and dining. Eating fills the body; dining feeds the soul. When every element is considered &mdash; the pacing, the pairings, the company, the setting &mdash; something alchemical happens. People slow down. They listen. They taste. They remember. That is what we curate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ACCORDION ============ -->
+    <section class="offering-services">
+      <div class="container">
+        <div class="offering-services-header" data-reveal>
+          <span class="section-label">What We Offer</span>
+          <h2 class="section-heading">Tailored to your <em>vision</em></h2>
+        </div>
+
+        <div class="service-accordion" data-reveal>
+          <div class="service-accordion-item">
+            <button class="service-accordion-trigger" aria-expanded="false">
+              <span class="service-accordion-title">Curated Dinner Experiences</span>
+              <span class="service-accordion-icon">+</span>
+            </button>
+            <div class="service-accordion-body">
+              <div class="service-accordion-content">
+                <p>Multi-course evenings designed around a theme, a story, or a season, where every element &mdash; from the first amuse-bouche to the final digestif &mdash; is considered and intentional.</p>
+                <picture><source type="image/webp" srcset="assets/images/colored/oak-tree-dinner-golden-hour.webp"><img src="assets/images/colored/oak-tree-dinner-golden-hour.jpg" alt="Dinner under oak tree at golden hour" loading="lazy" class="service-accordion-img" width="800" height="500" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-accordion-item">
+            <button class="service-accordion-trigger" aria-expanded="false">
+              <span class="service-accordion-title">Seasonal Table Settings</span>
+              <span class="service-accordion-icon">+</span>
+            </button>
+            <div class="service-accordion-body">
+              <div class="service-accordion-content">
+                <p>Rotating table designs that honor the rhythms of the year and bring natural beauty indoors &mdash; from spring blossoms to autumn harvest, every season tells a story through the table.</p>
+                <picture><source type="image/webp" srcset="assets/images/colored/artisan-plate-brass-detail.webp"><img src="assets/images/colored/artisan-plate-brass-detail.jpg" alt="Seasonal table setting detail" loading="lazy" class="service-accordion-img" width="800" height="500" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-accordion-item">
+            <button class="service-accordion-trigger" aria-expanded="false">
+              <span class="service-accordion-title">Wine &amp; Story Evenings</span>
+              <span class="service-accordion-icon">+</span>
+            </button>
+            <div class="service-accordion-body">
+              <div class="service-accordion-content">
+                <p>Intimate tastings where each pour is paired with a narrative, creating a journey through regions and traditions. Every glass has a story &mdash; we help your guests discover it.</p>
+                <picture><source type="image/webp" srcset="assets/images/b&w/conversation-cards-wine-cheese.webp"><img src="assets/images/b&w/conversation-cards-wine-cheese.jpg" alt="Wine and conversation cards evening" loading="lazy" class="service-accordion-img" width="800" height="500" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-accordion-item">
+            <button class="service-accordion-trigger" aria-expanded="false">
+              <span class="service-accordion-title">Bespoke Tasting Events</span>
+              <span class="service-accordion-icon">+</span>
+            </button>
+            <div class="service-accordion-body">
+              <div class="service-accordion-content">
+                <p>Custom-designed tasting experiences for brands, teams, or private celebrations. We craft sensory journeys that educate, delight, and bring people together around shared discovery.</p>
+                <picture><source type="image/webp" srcset="assets/images/colored/tasting-workshop-stations.webp"><img src="assets/images/colored/tasting-workshop-stations.jpg" alt="Bespoke tasting workshop stations" loading="lazy" class="service-accordion-img" width="800" height="500" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process">
+      <div class="container">
+        <div class="process-header" data-reveal>
+          <span class="section-label">How We Work</span>
+          <h2 class="section-heading">From vision to <em>table</em></h2>
+        </div>
+        <div class="process-steps" data-reveal>
+          <div class="process-step">
+            <span class="process-step-number" aria-hidden="true">01</span>
+            <h3 class="process-step-title">Envision</h3>
+            <p class="process-step-text">We begin by imagining the experience together &mdash; the mood, the flavors, the flow of the evening. What should guests feel when they sit down? What should they remember when they leave?</p>
+          </div>
+          <div class="process-connector" aria-hidden="true"></div>
+          <div class="process-step">
+            <span class="process-step-number" aria-hidden="true">02</span>
+            <h3 class="process-step-title">Source</h3>
+            <p class="process-step-text">We seek out the finest ingredients, vessels, and collaborators to bring the vision to life. Every element is chosen with purpose &mdash; from the farms we partner with to the artisans who craft the table.</p>
+          </div>
+          <div class="process-connector" aria-hidden="true"></div>
+          <div class="process-step">
+            <span class="process-step-number" aria-hidden="true">03</span>
+            <h3 class="process-step-title">Host</h3>
+            <p class="process-step-text">The evening itself &mdash; seamless, immersive, and unforgettable. We handle every detail so you can be fully present, savoring each moment alongside your guests.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED TESTIMONIAL ============ -->
+    <section class="featured-testimonial">
+      <div class="container" data-reveal>
+        <blockquote class="featured-testimonial-quote">
+          &ldquo;The dinner they curated for our anniversary was the most beautiful evening of our lives. Every taste, every texture, every conversation felt orchestrated yet completely natural.&rdquo;
+        </blockquote>
+        <div class="featured-testimonial-attr">
+          <span class="featured-testimonial-name">Julia &amp; Michael Torres</span>
+          <span class="featured-testimonial-type">Anniversary Dinner</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RELATED OFFERINGS ============ -->
+    <section class="related-offerings">
+      <div class="container">
+        <div class="related-offerings-header" data-reveal>
+          <span class="section-label">More of What We Do</span>
+        </div>
+        <div class="related-offerings-grid" data-reveal>
+          <a href="events.html" class="related-card">
+            <picture><source type="image/webp" srcset="assets/images/colored/backyard-dinner-through-gate.webp"><img src="assets/images/colored/backyard-dinner-through-gate.jpg" alt="Backyard dinner through garden gate" loading="lazy" class="related-card-img" width="800" height="600" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+            <div class="related-card-content">
+              <h3 class="related-card-title">Events</h3>
+              <p class="related-card-desc">Gatherings designed with meaningful, intentional hospitality</p>
+              <span class="related-card-arrow">&rarr;</span>
+            </div>
+          </a>
+          <a href="products.html" class="related-card">
+            <picture><source type="image/webp" srcset="assets/images/colored/curated-gift-box.webp"><img src="assets/images/colored/curated-gift-box.jpg" alt="Curated gift box collection" loading="lazy" class="related-card-img" width="800" height="600" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+            <div class="related-card-content">
+              <h3 class="related-card-title">Products</h3>
+              <p class="related-card-desc">Objects that help people tell stories and notice the good</p>
+              <span class="related-card-arrow">&rarr;</span>
+            </div>
+          </a>
+          <a href="workshops.html" class="related-card">
+            <picture><source type="image/webp" srcset="assets/images/colored/napkin-folding-workshop.webp"><img src="assets/images/colored/napkin-folding-workshop.jpg" alt="Napkin folding workshop" loading="lazy" class="related-card-img" width="800" height="600" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+            <div class="related-card-content">
+              <h3 class="related-card-title">Workshops</h3>
+              <p class="related-card-desc">Training tailored to your industry and context</p>
+              <span class="related-card-arrow">&rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section-cta">
+      <div class="container" data-reveal>
+        <h2 class="section-heading">Ready to <em>host?</em></h2>
+        <p class="section-cta-text">Let's create a table experience that your guests will talk about for years to come.</p>
+        <a href="connect.html?interest=tablescapes" class="section-cta-btn"><span>Start a Conversation</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="footer-wordmark">The Host<br>&amp; The Guest</h3>
+          <p class="footer-tagline"><em>The practice of hospitality.</em></p>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <span class="footer-col-title">Navigate</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="connect.html">Connect</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Services</span>
+            <a href="events.html">Events</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="tablescapes.html">Tablescapes</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Follow</span>
+            <a href="https://instagram.com/thehostandtheguest">Instagram</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Reach</span>
+            <a href="tel:619-203-8776">619-203-8776</a>
+            <a href="mailto:carijenkins@me.com">carijenkins@me.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Host &amp; The Guest</p>
+        <a href="mailto:contact@lukesheldon.com?subject=Inquiry%20About%20Website%20Development" style="font-size:0.6875rem;font-weight:300;color:rgba(250,248,245,0.35);letter-spacing:0.04em;transition:color 0.25s var(--ease);">Made by <em>Lou</em></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

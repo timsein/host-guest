@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — The Host &amp; The Guest</title>
+  <meta name="description" content="Signature collections crafted with intention. Table settings, stationery suites, gift boxes, and curated essentials for gatherings that matter.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#1f2c1e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%231f2c1e'/></svg>">
+  <link rel="preload" as="image" type="image/webp" href="assets/images/colored/product-collection-display.webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <div class="nav-left">
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <div class="nav-toggle-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+        <span class="nav-sep" aria-hidden="true"></span>
+      </div>
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-short">H&amp;G</span>
+        <span class="nav-logo-full">
+          <span class="nav-logo-top">The Host</span>
+          <span class="nav-logo-bottom">&amp; The Guest</span>
+        </span>
+      </a>
+      <div class="nav-right">
+        <button class="nav-icon" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <span class="nav-sep" aria-hidden="true"></span>
+        <a href="connect.html" class="nav-icon nav-cart" aria-label="Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="nav-cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide-out Menu -->
+  <div class="slide-menu-overlay" id="slideMenuOverlay"></div>
+  <div class="slide-menu" id="slideMenu">
+    <nav class="slide-menu-nav">
+      <a href="index.html" class="slide-menu-link slide-menu-link--faded">Home</a>
+      <a href="about.html" class="slide-menu-link slide-menu-link--faded">About</a>
+      <button class="slide-menu-link" id="servicesToggle" type="button">Services <span class="slide-menu-arrow">&rarr;</span></button>
+      <a href="products.html" class="slide-menu-link slide-menu-link--faded">Products</a>
+      <a href="connect.html" class="slide-menu-link slide-menu-link--faded">Connect</a>
+    </nav>
+  </div>
+  <div class="slide-menu-sub" id="slideMenuSub">
+    <button class="slide-menu-sub-back" id="slideMenuSubBack">&larr; Back</button>
+    <h3 class="slide-menu-sub-title">Services</h3>
+    <div class="slide-menu-sub-divider"></div>
+    <div class="slide-menu-sub-links">
+      <a href="events.html" class="slide-menu-sub-link">Events</a>
+      <a href="workshops.html" class="slide-menu-sub-link">Workshops</a>
+      <a href="tablescapes.html" class="slide-menu-sub-link">Tablescapes</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HEADER STAGE ============ -->
+    <div class="header-stage"></div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <picture><source type="image/webp" srcset="assets/images/colored/product-collection-display.webp"><img src="assets/images/colored/product-collection-display.jpg" alt="Product collection display" fetchpriority="high" width="1600" height="900" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span class="section-label">Products</span>
+        <h1 class="page-hero-title">Objects made with <em>intention</em></h1>
+        <p class="page-hero-subtitle">Signature collections for the table, the mantel, and the moments in between.</p>
+      </div>
+    </section>
+
+    <!-- ============ INTRODUCTION ============ -->
+    <section class="offering-intro">
+      <div class="container">
+        <div class="philosophy-layout">
+          <div class="philosophy-left" data-reveal>
+            <span class="offering-watermark" aria-hidden="true">H&amp;G</span>
+            <span class="section-label">The Collection</span>
+            <h2 class="philosophy-heading">
+              Every object tells a story. We design the ones <em>worth keeping.</em>
+            </h2>
+          </div>
+          <div class="philosophy-right" data-reveal>
+            <p>We design products to help people tell stories, connect meaningfully, and notice the good around them. Born from our work designing events and experiences, our product line brings the same care and intentionality to objects you can hold, gift, and live with every day.</p>
+            <p>Each piece is designed in-house and crafted with partners who share our reverence for materiality &mdash; the weight of good paper, the hand of fine linen, the quiet luxury of something made slowly and well. The details you can hold are the ones you remember forever.</p>
+            <p>These aren't decorations. They're invitations to gather, to slow down, to set a table that says <em>you matter.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT CATEGORIES ============ -->
+    <section class="product-categories">
+      <div class="container">
+        <div class="product-categories-header" data-reveal>
+          <span class="section-label">Shop by Collection</span>
+          <h2 class="section-heading">Designed for the <em>intentional</em> home</h2>
+        </div>
+
+        <div class="product-grid" data-reveal>
+          <a href="connect.html?interest=products" class="product-card">
+            <picture><source type="image/webp" srcset="assets/images/colored/artisan-plate-brass-detail.webp"><img src="assets/images/colored/artisan-plate-brass-detail.jpg" alt="The Table Collection" loading="lazy" class="product-card-img" width="800" height="600" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+            <div class="product-card-content">
+              <h3 class="product-card-title">The Table Collection</h3>
+              <p class="product-card-desc">Linen napkins, ceramic vessels, brass candleholders, and hand-poured candles &mdash; everything you need to set a table with soul.</p>
+              <span class="product-card-link">Explore Collection &rarr;</span>
+            </div>
+          </a>
+
+          <a href="connect.html?interest=products" class="product-card">
+            <picture><source type="image/webp" srcset="assets/images/colored/design-mood-board.webp"><img src="assets/images/colored/design-mood-board.jpg" alt="Stationery Suites" loading="lazy" class="product-card-img" width="800" height="600" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+            <div class="product-card-content">
+              <h3 class="product-card-title">Stationery Suites</h3>
+              <p class="product-card-desc">Letterpress invitations, menu cards, place cards, and thank-you notes. Available as ready-made sets or customized to your event.</p>
+              <span class="product-card-link">Explore Collection &rarr;</span>
+            </div>
+          </a>
+
+          <a href="connect.html?interest=products" class="product-card">
+            <picture><source type="image/webp" srcset="assets/images/colored/curated-gift-box.webp"><img src="assets/images/colored/curated-gift-box.jpg" alt="Gift Boxes" loading="lazy" class="product-card-img" width="800" height="600" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+            <div class="product-card-content">
+              <h3 class="product-card-title">Gift Boxes</h3>
+              <p class="product-card-desc">Curated gift sets for hosts, newlyweds, new homeowners, and anyone who deserves something beautiful. Each box tells a small story.</p>
+              <span class="product-card-link">Explore Collection &rarr;</span>
+            </div>
+          </a>
+
+          <a href="connect.html?interest=products" class="product-card">
+            <picture><source type="image/webp" srcset="assets/images/colored/autumn-edition-collection.webp"><img src="assets/images/colored/autumn-edition-collection.jpg" alt="Seasonal Editions" loading="lazy" class="product-card-img" width="800" height="600" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+            <div class="product-card-content">
+              <h3 class="product-card-title">Seasonal Editions</h3>
+              <p class="product-card-desc">Limited-run pieces released each season &mdash; table runners, printed napkins, and bespoke objects inspired by the rhythm of the year.</p>
+              <span class="product-card-link">Explore Collection &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED COLLECTION ============ -->
+    <section class="featured-collection">
+      <div class="container">
+        <div class="featured-collection-layout" data-reveal>
+          <picture><source type="image/webp" srcset="assets/images/b&w/curated-gift-box.webp"><img src="assets/images/b&w/curated-gift-box.jpg" alt="The Gathering Box" loading="lazy" class="featured-collection-img" width="800" height="800" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+          <div class="featured-collection-content">
+            <span class="section-label">Featured</span>
+            <h2 class="philosophy-heading">The Gathering Box</h2>
+            <p>Our signature gift &mdash; a curated box containing a hand-poured candle, linen napkin set, letterpress conversation cards, and a small-batch olive oil. Everything you need to turn an ordinary evening into something memorable.</p>
+            <p>Designed as a host gift, a housewarming gesture, or a quiet treat for yourself.</p>
+            <a href="connect.html?interest=products" class="featured-collection-btn">
+              <span>Inquire About This Collection</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BESPOKE CALLOUT ============ -->
+    <section class="featured-testimonial">
+      <div class="container" data-reveal>
+        <span class="section-label">Bespoke</span>
+        <blockquote class="featured-testimonial-quote">
+          Don&rsquo;t see exactly what you&rsquo;re looking for? We design custom pieces and collections for events, brands, and private clients. Every product in our line began as a bespoke commission.
+        </blockquote>
+        <a href="connect.html?interest=products" class="featured-collection-btn" style="margin-top: 2rem;">
+          <span>Start a Custom Order</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section-cta">
+      <div class="container" data-reveal>
+        <h2 class="section-heading">Bring intention <em>home</em></h2>
+        <p class="section-cta-text">Browse our collections, or reach out to discuss custom pieces for your next gathering or gift.</p>
+        <a href="connect.html?interest=products" class="section-cta-btn"><span>Get in Touch</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="footer-wordmark">The Host<br>&amp; The Guest</h3>
+          <p class="footer-tagline"><em>The practice of hospitality.</em></p>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <span class="footer-col-title">Navigate</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="connect.html">Connect</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Services</span>
+            <a href="events.html">Events</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="tablescapes.html">Tablescapes</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Follow</span>
+            <a href="https://instagram.com/thehostandtheguest">Instagram</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Reach</span>
+            <a href="tel:619-203-8776">619-203-8776</a>
+            <a href="mailto:carijenkins@me.com">carijenkins@me.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Host &amp; The Guest</p>
+        <a href="mailto:contact@lukesheldon.com?subject=Inquiry%20About%20Website%20Development" style="font-size:0.6875rem;font-weight:300;color:rgba(250,248,245,0.35);letter-spacing:0.04em;transition:color 0.25s var(--ease);">Made by <em>Lou</em></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

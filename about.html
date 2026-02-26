@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — The Host &amp; The Guest</title>
+  <meta name="description" content="Rooted in the belief that gathering changes everything. Learn the story behind The Host &amp; The Guest and the principles that guide our work.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#1f2c1e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%231f2c1e'/></svg>">
+  <link rel="preload" as="image" type="image/webp" href="assets/images/colored/about-cover.webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <div class="nav-left">
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <div class="nav-toggle-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+        <span class="nav-sep" aria-hidden="true"></span>
+      </div>
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-short">H&amp;G</span>
+        <span class="nav-logo-full">
+          <span class="nav-logo-top">The Host</span>
+          <span class="nav-logo-bottom">&amp; The Guest</span>
+        </span>
+      </a>
+      <div class="nav-right">
+        <button class="nav-icon" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <span class="nav-sep" aria-hidden="true"></span>
+        <a href="connect.html" class="nav-icon nav-cart" aria-label="Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="nav-cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide-out Menu -->
+  <div class="slide-menu-overlay" id="slideMenuOverlay"></div>
+  <div class="slide-menu" id="slideMenu">
+    <nav class="slide-menu-nav">
+      <a href="index.html" class="slide-menu-link slide-menu-link--faded">Home</a>
+      <a href="about.html" class="slide-menu-link slide-menu-link--faded">About</a>
+      <button class="slide-menu-link" id="servicesToggle" type="button">Services <span class="slide-menu-arrow">&rarr;</span></button>
+      <a href="products.html" class="slide-menu-link slide-menu-link--faded">Products</a>
+      <a href="connect.html" class="slide-menu-link slide-menu-link--faded">Connect</a>
+    </nav>
+  </div>
+  <div class="slide-menu-sub" id="slideMenuSub">
+    <button class="slide-menu-sub-back" id="slideMenuSubBack">&larr; Back</button>
+    <h3 class="slide-menu-sub-title">Services</h3>
+    <div class="slide-menu-sub-divider"></div>
+    <div class="slide-menu-sub-links">
+      <a href="events.html" class="slide-menu-sub-link">Events</a>
+      <a href="workshops.html" class="slide-menu-sub-link">Workshops</a>
+      <a href="tablescapes.html" class="slide-menu-sub-link">Tablescapes</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HEADER STAGE ============ -->
+    <div class="header-stage"></div>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <picture><source type="image/webp" srcset="assets/images/colored/about-cover.webp"><img src="assets/images/colored/about-cover.JPG" alt="The Host and The Guest — about" fetchpriority="high" width="1600" height="680" style="width:100%;height:100%;object-fit:cover;" decoding="async"></picture>
+      </div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <span class="section-label">Our Story</span>
+        <h1 class="page-hero-title">Rooted in the belief that gathering <em>changes everything</em></h1>
+      </div>
+    </section>
+
+    <!-- ============ ORIGIN STORY ============ -->
+    <section class="offering-intro">
+      <div class="container">
+        <div class="philosophy-layout">
+          <div class="philosophy-left" data-reveal>
+            <picture><source type="image/webp" srcset="assets/images/colored/arranging-roses-tablescape.webp"><img src="assets/images/colored/arranging-roses-tablescape.jpg" alt="Arranging roses for a tablescape" loading="lazy" width="600" height="800" style="width:100%;height:100%;object-fit:cover;aspect-ratio:3/4;" decoding="async"></picture>
+          </div>
+          <div class="philosophy-right" data-reveal>
+            <span class="section-label">The Beginning</span>
+            <h2 class="philosophy-heading">
+              Two words that <em>changed everything</em>
+            </h2>
+            <p>Host and guest. Two roles, one table. We started with a simple observation: in every meaningful gathering, each person carries both identities. The one who welcomes and the one who receives. The one who prepares the space and the one who fills it with presence. This duality &mdash; this quiet exchange &mdash; is the heartbeat of hospitality.</p>
+            <p>The Host &amp; The Guest was born from a belief that <em>how</em> we gather matters as much as <em>why</em> we gather. We live in a world saturated with events but starving for connection. Calendars are full, yet something essential is missing. We founded this practice to bridge that gap &mdash; to design gatherings where people don't just show up, but truly arrive.</p>
+            <p>There is a lost art to intentional hospitality. A way of setting a table that says, <em>you belong here.</em> A way of designing an evening that moves people from small talk to real conversation, from polite distance to genuine warmth. Our mission is to revive that art &mdash; not as nostalgia, but as a living practice that meets people exactly where they are.</p>
+            <p>We look forward with a clear vision: to bring beauty and intention to every table, every room, every gathering we touch. Whether it's a dinner for eight or a celebration for hundreds, we believe that when people feel truly welcomed, something shifts. Walls come down. Stories are shared. Strangers become friends. That shift is what we design for, and it's what keeps us coming back to the table.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALUES ============ -->
+    <section class="values-section">
+      <div class="container" data-reveal>
+        <span class="section-label">What We Hold True</span>
+        <h2 class="section-heading">Three principles that <em>guide everything</em></h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <h3 class="value-title">Intentionality</h3>
+            <p class="value-text">Every detail serves a purpose. We don't add elements for decoration &mdash; we design each moment to deepen connection and meaning.</p>
+          </div>
+          <div class="value-item">
+            <h3 class="value-title">Beauty in Detail</h3>
+            <p class="value-text">The difference between good and extraordinary lives in the details most people overlook. We obsess over the small things because they create the feeling.</p>
+          </div>
+          <div class="value-item">
+            <h3 class="value-title">The Power of the Table</h3>
+            <p class="value-text">The table is the oldest gathering place. When we sit down together &mdash; to eat, to talk, to share &mdash; something shifts. We design for that shift.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement">
+      <div class="container">
+        <div class="statement-content" data-reveal>
+          <span class="statement-label">Looking Forward</span>
+          <div class="statement-line"></div>
+          <h2 class="statement-heading">We're building a world where every gathering <em>feels like coming home.</em></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section-cta">
+      <div class="container" data-reveal>
+        <h2 class="section-heading">Let's start <em>a conversation</em></h2>
+        <p class="section-cta-text">We'd love to hear what you're dreaming about. Whether it's an event, a product, or a new way of gathering &mdash; it all starts here.</p>
+        <a href="connect.html" class="section-cta-btn"><span>Get in Touch</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="footer-wordmark">The Host<br>&amp; The Guest</h3>
+          <p class="footer-tagline"><em>The practice of hospitality.</em></p>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <span class="footer-col-title">Navigate</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="connect.html">Connect</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Services</span>
+            <a href="events.html">Events</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="tablescapes.html">Tablescapes</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Follow</span>
+            <a href="https://instagram.com/thehostandtheguest">Instagram</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Reach</span>
+            <a href="tel:619-203-8776">619-203-8776</a>
+            <a href="mailto:carijenkins@me.com">carijenkins@me.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Host &amp; The Guest</p>
+        <a href="mailto:contact@lukesheldon.com?subject=Inquiry%20About%20Website%20Development" style="font-size:0.6875rem;font-weight:300;color:rgba(250,248,245,0.35);letter-spacing:0.04em;transition:color 0.25s var(--ease);">Made by <em>Lou</em></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
