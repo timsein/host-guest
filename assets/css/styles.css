@@ -2333,8 +2333,9 @@ body.menu-open {
    ============================================ */
 [data-reveal] {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+  transform: translateY(12px);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-reveal].revealed {
@@ -2342,9 +2343,31 @@ body.menu-open {
   transform: translateY(0);
 }
 
-[data-reveal]:nth-child(2) { transition-delay: 0.1s; }
-[data-reveal]:nth-child(3) { transition-delay: 0.2s; }
-[data-reveal]:nth-child(4) { transition-delay: 0.3s; }
+[data-reveal]:nth-child(2) { transition-delay: 0.12s; }
+[data-reveal]:nth-child(3) { transition-delay: 0.24s; }
+[data-reveal]:nth-child(4) { transition-delay: 0.36s; }
+
+/* Stagger children within revealed containers */
+[data-reveal].revealed > * {
+  animation: revealChild 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+[data-reveal].revealed > *:nth-child(1) { animation-delay: 0s; }
+[data-reveal].revealed > *:nth-child(2) { animation-delay: 0.06s; }
+[data-reveal].revealed > *:nth-child(3) { animation-delay: 0.12s; }
+[data-reveal].revealed > *:nth-child(4) { animation-delay: 0.18s; }
+[data-reveal].revealed > *:nth-child(5) { animation-delay: 0.24s; }
+
+@keyframes revealChild {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 /* ============================================
@@ -2604,7 +2627,12 @@ body.menu-open {
   }
 
   [data-reveal] {
-    transition-duration: 0s;
+    transition-duration: 0.3s;
+    transform: none;
+  }
+
+  [data-reveal].revealed > * {
+    animation-duration: 0.3s;
   }
 
   .offerings-panel {
