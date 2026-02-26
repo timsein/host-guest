@@ -960,7 +960,7 @@ body.menu-open {
 .gallery-arch {
   flex: 0 0 clamp(260px, 22vw, 380px);
   overflow: hidden;
-  contain: layout style paint;
+  contain: style;
 }
 
 .gallery-arch img {
@@ -2603,7 +2603,7 @@ body.menu-open {
 /* --- Reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   .gallery-arches-track {
-    animation-duration: 0s;
+    animation-duration: 240s;
   }
 
   [data-reveal] {
