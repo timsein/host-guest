@@ -951,7 +951,7 @@ body.menu-open {
   gap: clamp(6px, 0.6vw, 10px);
   width: max-content;
   height: clamp(340px, 42vw, 580px);
-  animation: gallery-scroll 120s linear infinite;
+  animation: gallery-scroll 65s linear infinite;
   will-change: transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -982,7 +982,7 @@ body.menu-open {
 
   .gallery-arches-track {
     height: 340px;
-    animation-duration: 300s;
+    animation-duration: 165s;
   }
 
   .gallery-arch {
@@ -2623,7 +2623,7 @@ body.menu-open {
 /* --- Reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   .gallery-arches-track {
-    animation-duration: 300s;
+    animation-duration: 165s;
   }
 
   [data-reveal] {
